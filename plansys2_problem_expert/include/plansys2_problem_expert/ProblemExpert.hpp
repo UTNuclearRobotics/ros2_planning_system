@@ -70,6 +70,8 @@ public:
   bool isValidFunction(const plansys2::Function & function);
   bool isValidGoal(const plansys2::Goal & goal);
 
+  std::shared_ptr<DomainExpert> getDomainExpert() { return domain_expert_; }
+
 private:
   bool checkPredicateTreeTypes(
     const plansys2_msgs::msg::Tree & tree,
